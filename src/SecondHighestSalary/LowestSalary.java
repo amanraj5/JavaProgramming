@@ -118,19 +118,19 @@ public class LowestSalary {
         double firstMax = Double.MIN_VALUE;
         double secondMax = Double.MIN_VALUE;
         for(int i=0;i<e.length;i++){
-            double salary=e[i].getSalary();
-            if(salary>firstMax){
-                secondMax=firstMax;
-                firstMax=salary;
+            double salary = e[i].getSalary();
+            if(salary > firstMax){
+                secondMax = firstMax;
+                firstMax = salary;
             }
-            else if(salary>secondMax && salary!=firstMax){
-                secondMax=salary;
+            else if(salary > secondMax && salary != firstMax){
+                secondMax = salary;
             }
         }
-        int idx=0;
+        int idx = 0;
         for(Employee emp:e){
-            if(emp.getSalary()==secondMax){
-                ans[idx]=emp;
+            if(emp.getSalary() == secondMax){
+                ans[idx] = emp;
             }
         }
         return ans;
