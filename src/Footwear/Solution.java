@@ -166,8 +166,10 @@ public class Solution {
 
         for(Footwear f : list){
             int price = f.getPrice();
-            if(price>first)
+            if(price>first) {
+                second=first;
                 first=price;
+            }
             else if(price>second && price!=first)
                 second=price;
         }
