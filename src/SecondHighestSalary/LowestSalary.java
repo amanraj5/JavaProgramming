@@ -94,7 +94,7 @@ public class LowestSalary {
             emp[i]=new Employee(id,n,a,g,s);
         }
         int age=sc.nextInt();
-        Employee[] ans1=getEmployeeWithSecondLowestSalary(emp);
+        Employee[] ans1 = getEmployeeWithSecondLowestSalary(emp);
         if(ans1!=null){
             for (Employee employee : ans1) {
                 System.out.println(employee.getId() + "#" + employee.getName());
@@ -186,7 +186,7 @@ class Employee {
         this.gender = gender;
     }
     public double getSalary() {
-        return salary;
+        return this.salary;
     }
     public void setSalary(double salary) {
         this.salary = salary;
