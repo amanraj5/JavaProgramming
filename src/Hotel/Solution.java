@@ -108,8 +108,7 @@ Yes1
 Output2:
 No rooms booked in the given month
 No such option available
-
- */
+*/
 
 package Hotel;
 import java.util.*;
